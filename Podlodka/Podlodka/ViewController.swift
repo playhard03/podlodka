@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,5 +31,6 @@ class ViewController: UIViewController {
         guard  let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {return}
           navigationController?.pushViewController(vc, animated: true)
     }
+
 }
 

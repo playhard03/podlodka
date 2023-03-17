@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hDY-Ih-IfL">
-    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Podlodka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main" translatesAutoresizingMaskIntoConstraints="NO" id="kba-Zm-OEx">
-                                <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PT1-Iw-dg5">
-                                <rect key="frame" x="94" y="209.33333333333334" width="664" height="34.333333333333343"/>
+                                <rect key="frame" x="94" y="197.66666666666666" width="624" height="34"/>
                                 <color key="backgroundColor" red="0.95764762160000005" green="0.81532406810000002" blue="0.34887194630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-pS-2wk">
-                                <rect key="frame" x="94" y="135" width="664" height="34.333333333333343"/>
+                                <rect key="frame" x="94" y="123.00000000000001" width="624" height="34.666666666666671"/>
                                 <color key="backgroundColor" red="0.95764762160000005" green="0.81532406810000002" blue="0.34887194630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Nj-67-zGb">
-                                <rect key="frame" x="94" y="283.66666666666669" width="664" height="34.333333333333314"/>
+                                <rect key="frame" x="94" y="271.66666666666669" width="624" height="34.333333333333314"/>
                                 <color key="backgroundColor" red="0.95764762160000005" green="0.81532406810000002" blue="0.34887194630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -56,7 +56,7 @@
                         <constraints>
                             <constraint firstItem="2Nj-67-zGb" firstAttribute="top" secondItem="PT1-Iw-dg5" secondAttribute="bottom" constant="40" id="2EJ-5S-YSW"/>
                             <constraint firstItem="PT1-Iw-dg5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="3Ky-7S-j1o"/>
-                            <constraint firstItem="kba-Zm-OEx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="D6e-bO-xmD"/>
+                            <constraint firstItem="kba-Zm-OEx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="D6e-bO-xmD"/>
                             <constraint firstItem="Ah7-pS-2wk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="Erp-gb-gku"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ah7-pS-2wk" secondAttribute="trailing" constant="94" id="Gc3-dI-hgN"/>
                             <constraint firstItem="2Nj-67-zGb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="IIn-fB-rZs"/>
@@ -65,7 +65,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Nj-67-zGb" secondAttribute="trailing" constant="94" id="OId-qh-cKs"/>
                             <constraint firstItem="kba-Zm-OEx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cuV-93-YMa"/>
                             <constraint firstItem="PT1-Iw-dg5" firstAttribute="top" secondItem="Ah7-pS-2wk" secondAttribute="bottom" constant="40" id="gr5-js-nFP"/>
-                            <constraint firstItem="kba-Zm-OEx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xXP-RF-dJP"/>
+                            <constraint firstItem="kba-Zm-OEx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xXP-RF-dJP"/>
                             <constraint firstAttribute="bottom" secondItem="kba-Zm-OEx" secondAttribute="bottom" id="yAf-IL-2hk"/>
                         </constraints>
                     </view>
@@ -73,44 +73,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="957" y="-2"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="seO-mx-Bzj">
             <objects>
                 <viewController storyboardIdentifier="mainViewController" id="uVP-aQ-Pb1" customClass="mainViewController" customModule="Podlodka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s1S-6d-aqJ">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sea" translatesAutoresizingMaskIntoConstraints="NO" id="XRi-ZO-jg2">
-                                <rect key="frame" x="0.0" y="45" width="852" height="348"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Jmd-tY-5HE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="XRi-ZO-jg2" firstAttribute="trailing" secondItem="Jmd-tY-5HE" secondAttribute="trailing" id="7Mh-Ff-uFR"/>
-                            <constraint firstAttribute="bottom" secondItem="XRi-ZO-jg2" secondAttribute="bottom" id="AYw-bk-etc"/>
-                            <constraint firstItem="XRi-ZO-jg2" firstAttribute="leading" secondItem="Jmd-tY-5HE" secondAttribute="leading" id="GhZ-N4-pXj"/>
-                            <constraint firstItem="XRi-ZO-jg2" firstAttribute="top" secondItem="s1S-6d-aqJ" secondAttribute="top" constant="45" id="QcW-8a-UpW"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xmS-iL-klt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920.4225352112678" y="-2.2900763358778624"/>
+            <point key="canvasLocation" x="1919.7044334975371" y="-2.3999999999999999"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="Vh9-7r-p2K">
             <objects>
                 <viewController storyboardIdentifier="ResultViewController" id="Xa6-dj-3Ex" customClass="ResultViewController" customModule="Podlodka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JLm-PH-yix">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3R-zk-h2m">
-                                <rect key="frame" x="16" y="59" width="72" height="35"/>
+                                <rect key="frame" x="16" y="47" width="72" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="&lt;Back"/>
                                 <connections>
@@ -136,11 +125,11 @@
             <objects>
                 <viewController storyboardIdentifier="SettingsViewController" id="wyQ-G7-XVT" customClass="SettingsViewController" customModule="Podlodka" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DUc-o1-Xv0">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkz-bY-cwe">
-                                <rect key="frame" x="16" y="59" width="72" height="35"/>
+                                <rect key="frame" x="16" y="47" width="72" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="&lt;Back"/>
                                 <connections>
@@ -182,7 +171,6 @@
     </scenes>
     <resources>
         <image name="main" width="320" height="320"/>
-        <image name="sea" width="800" height="566"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

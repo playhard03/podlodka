@@ -16,6 +16,7 @@
 		73F561C829C271280037C5E1 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561C729C271280037C5E1 /* mainViewController.swift */; };
 		73F561CA29C273630037C5E1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561C929C273630037C5E1 /* SettingsViewController.swift */; };
 		73F561CC29C273700037C5E1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561CB29C273700037C5E1 /* ResultViewController.swift */; };
+		73F561CE29C30FD60037C5E1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561CD29C30FD60037C5E1 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		73F561C729C271280037C5E1 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		73F561C929C273630037C5E1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		73F561CB29C273700037C5E1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		73F561CD29C30FD60037C5E1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		73F561C629C26E170037C5E1 /* Podlodka Models */ = {
 			isa = PBXGroup;
 			children = (
+				73F561CD29C30FD60037C5E1 /* Models.swift */,
 			);
 			path = "Podlodka Models";
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				73F561CA29C273630037C5E1 /* SettingsViewController.swift in Sources */,
 				73F561C829C271280037C5E1 /* mainViewController.swift in Sources */,
 				73F561CC29C273700037C5E1 /* ResultViewController.swift in Sources */,
+				73F561CE29C30FD60037C5E1 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

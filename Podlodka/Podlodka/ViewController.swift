@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startGameButton(){
-      guard  let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainViewController") as? mainViewController else {return}
+      guard  let vc = self.storyboard?.instantiateViewController(withIdentifier: "secondViewController") as? secondViewController else {return}
         navigationController?.pushViewController(vc, animated: true)
     }
     

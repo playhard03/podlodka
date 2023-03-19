@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		734CC2D729C7A00300D427FE /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734CC2D629C7A00300D427FE /* secondViewController.swift */; };
+		73979EC329C4A32000C76B27 /* PodlodkaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73979EC229C4A32000C76B27 /* PodlodkaViewController.swift */; };
 		73F561B029C26B230037C5E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561AF29C26B230037C5E1 /* AppDelegate.swift */; };
 		73F561B229C26B230037C5E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561B129C26B230037C5E1 /* SceneDelegate.swift */; };
 		73F561B429C26B230037C5E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561B329C26B230037C5E1 /* ViewController.swift */; };
 		73F561B729C26B230037C5E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F561B529C26B230037C5E1 /* Main.storyboard */; };
 		73F561B929C26B270037C5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73F561B829C26B270037C5E1 /* Assets.xcassets */; };
 		73F561BC29C26B270037C5E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73F561BA29C26B270037C5E1 /* LaunchScreen.storyboard */; };
-		73F561C829C271280037C5E1 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561C729C271280037C5E1 /* mainViewController.swift */; };
 		73F561CA29C273630037C5E1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561C929C273630037C5E1 /* SettingsViewController.swift */; };
 		73F561CC29C273700037C5E1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561CB29C273700037C5E1 /* ResultViewController.swift */; };
 		73F561CE29C30FD60037C5E1 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F561CD29C30FD60037C5E1 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		734CC2D629C7A00300D427FE /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
+		73979EC229C4A32000C76B27 /* PodlodkaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodlodkaViewController.swift; sourceTree = "<group>"; };
 		73F561AC29C26B230037C5E1 /* Podlodka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Podlodka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73F561AF29C26B230037C5E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73F561B129C26B230037C5E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +31,6 @@
 		73F561B829C26B270037C5E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73F561BB29C26B270037C5E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73F561BD29C26B270037C5E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		73F561C729C271280037C5E1 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		73F561C929C273630037C5E1 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		73F561CB29C273700037C5E1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		73F561CD29C30FD60037C5E1 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
@@ -96,9 +98,10 @@
 			children = (
 				73F561B329C26B230037C5E1 /* ViewController.swift */,
 				73F561B529C26B230037C5E1 /* Main.storyboard */,
-				73F561C729C271280037C5E1 /* mainViewController.swift */,
 				73F561C929C273630037C5E1 /* SettingsViewController.swift */,
 				73F561CB29C273700037C5E1 /* ResultViewController.swift */,
+				73979EC229C4A32000C76B27 /* PodlodkaViewController.swift */,
+				734CC2D629C7A00300D427FE /* secondViewController.swift */,
 			);
 			path = Podlodka;
 			sourceTree = "<group>";
@@ -182,11 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				734CC2D729C7A00300D427FE /* secondViewController.swift in Sources */,
 				73F561B429C26B230037C5E1 /* ViewController.swift in Sources */,
 				73F561B029C26B230037C5E1 /* AppDelegate.swift in Sources */,
 				73F561B229C26B230037C5E1 /* SceneDelegate.swift in Sources */,
 				73F561CA29C273630037C5E1 /* SettingsViewController.swift in Sources */,
-				73F561C829C271280037C5E1 /* mainViewController.swift in Sources */,
+				73979EC329C4A32000C76B27 /* PodlodkaViewController.swift in Sources */,
 				73F561CC29C273700037C5E1 /* ResultViewController.swift in Sources */,
 				73F561CE29C30FD60037C5E1 /* Models.swift in Sources */,
 			);

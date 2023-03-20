@@ -9,10 +9,14 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var segment: UISegmentedControl!
+    @IBOutlet weak var textNameLabel: UILabel!
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        guard let podlodka =  UserDefaults.standard.value(Podlodka.self, forKey: "name") else {return}
+        textNameLabel.text = podlodka.name
+        segment.selectedSegmentIndex = podlodka.image 
     }
     
 
@@ -20,4 +24,17 @@ class SettingsViewController: UIViewController {
     @IBAction func backButton(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
+    
+ 
+    
+    @IBAction func saveButton(_ sender: Any) {
+        textNameLabel.text = textField.text
+        textField.text = nil
+        let podlodka = Podlodka(name: textNameLabel.text!, image: segment.selectedSegmentIndex, score: 1)
+        UserDefaults.standard.setValue(encodable: podlodka, forKey: "name")
+        UserDefaults.standard.setValue(encodable: podlodka, forKey: "image")
+    }
+    
+
+ 
 }

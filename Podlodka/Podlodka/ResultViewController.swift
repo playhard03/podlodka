@@ -9,10 +9,12 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var recordLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        guard let podlodka =  UserDefaults.standard.value(Podlodka.self, forKey: "score") else {return}
+        recordLabel.text = "Ваш рекорд \(podlodka.score)"
     }
     
 

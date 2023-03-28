@@ -128,20 +128,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ваше время" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-kL-Xpi">
+                                <rect key="frame" x="16" y="177" width="780" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="njK-xL-wFS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="njK-xL-wFS" firstAttribute="trailing" secondItem="E5Q-kL-Xpi" secondAttribute="trailing" constant="16" id="8F8-eW-Dy5"/>
                             <constraint firstItem="njK-xL-wFS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="M3R-zk-h2m" secondAttribute="trailing" symbolic="YES" id="PeO-Vd-wcZ"/>
                             <constraint firstItem="njK-xL-wFS" firstAttribute="trailing" secondItem="wGK-xJ-Nbr" secondAttribute="trailing" constant="242" id="Tmq-ei-6Tu"/>
+                            <constraint firstItem="E5Q-kL-Xpi" firstAttribute="leading" secondItem="njK-xL-wFS" secondAttribute="leading" constant="16" id="Xxq-37-pXs"/>
                             <constraint firstItem="wGK-xJ-Nbr" firstAttribute="leading" secondItem="njK-xL-wFS" secondAttribute="leading" constant="242" id="feo-xV-hxY"/>
                             <constraint firstItem="M3R-zk-h2m" firstAttribute="top" secondItem="njK-xL-wFS" secondAttribute="top" id="hhE-aT-mbx"/>
+                            <constraint firstItem="E5Q-kL-Xpi" firstAttribute="top" secondItem="wGK-xJ-Nbr" secondAttribute="bottom" constant="23.670000000000002" id="knW-su-EnI"/>
                             <constraint firstItem="wGK-xJ-Nbr" firstAttribute="top" secondItem="njK-xL-wFS" secondAttribute="top" constant="86" id="oVv-2V-gzc"/>
                             <constraint firstItem="M3R-zk-h2m" firstAttribute="leading" secondItem="njK-xL-wFS" secondAttribute="leading" constant="16" id="qIF-l1-0zc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="recordLabel" destination="wGK-xJ-Nbr" id="Ejh-50-V7I"/>
+                        <outlet property="timeLabel" destination="E5Q-kL-Xpi" id="BpD-pH-cP7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYZ-U0-jeT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

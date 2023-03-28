@@ -9,12 +9,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var recordLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         guard let podlodka =  UserDefaults.standard.value(Podlodka.self, forKey: "score") else {return}
-        recordLabel.text = "Ваш рекорд \(podlodka.score)"
+        recordLabel.text = "Ваш рекорд - \(podlodka.score)"
+        timeLabel.text = "Последний заплыв: - \(podlodka.date)"
     }
     
 

@@ -8,24 +8,29 @@
 import Foundation
 import UIKit
 
+enum Keys: String{
+    case date
+}
 
 class Podlodka: Codable {
     
     var name: String
     var image: Int
     var score: Int
+    var date: String
     
-    init(name: String, image: Int, score: Int){
+    init(name: String, image: Int, score: Int, date: String){
         self.name = name
         self.image = image
         self.score = score
+        self.date = date
     }
-    convenience init(score: Int, name: String = "default name", image: Int = 0){
-            self.init(name: name, image: image, score: score)
+    convenience init(score: Int, name: String = "default name", image: Int = 0, date: String){
+            self.init(name: name, image: image, score: score, date: date)
         }
     
     enum CodingKeys: String, CodingKey {
-        case name, image, score
+        case name, image, score, date
     }
     
     required public init(from decoder: Decoder) throws {
@@ -34,6 +39,7 @@ class Podlodka: Codable {
         self.name = try container.decode(String.self, forKey: .name)
         self.image = try container.decode(Int.self, forKey: .image)
         self.score = try container.decode(Int.self, forKey: .score)
+        self.date = try container.decode(String.self, forKey: .date)
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -42,6 +48,7 @@ class Podlodka: Codable {
         try container.encode(self.name, forKey: .name)
         try container.encode(self.image, forKey: .image)
         try container.encode(self.score, forKey: .score)
+        try container.encode(self.date, forKey: .date)
     }
     
 }

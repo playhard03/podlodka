@@ -7,8 +7,8 @@ class secondViewController: UIViewController {
     var timer: Timer?
     var score = 0
     var scoreLabel: UILabel!
-    
-    
+    let date = Date()
+    let formater = DateFormatter()
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let podlodka =  UserDefaults.standard.value(Podlodka.self, forKey: "name") else {return}
@@ -28,6 +28,10 @@ class secondViewController: UIViewController {
         
         // Запускаем игровой таймер
         startTimer()
+        
+       
+        formater.dateFormat = "d MMM yyyy"
+
     }
     
     func createFish() {
@@ -106,13 +110,14 @@ class secondViewController: UIViewController {
     private func endGame(){
         if score >= 7 {
             timer?.invalidate()
-            let score = Podlodka(score: score)
-            UserDefaults.standard.setValue(encodable: score, forKey: "score")
-            
-            let alert = UIAlertController(title: "Game Over", message: "Игра закончена", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Игра закончена", message: formater.string(from: date), preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default) { _ in
                 self.navigationController?.popToRootViewController(animated: true)
             }
+            
+            let score = Podlodka(score: score, date: formater.string(from: date))
+            UserDefaults.standard.setValue(encodable: score, forKey: "score")
+            
             alert.addAction(ok)
             present(alert, animated: true)
         }
